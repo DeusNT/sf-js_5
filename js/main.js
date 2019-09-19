@@ -14,11 +14,12 @@ function countDown() {
     else if (countMin > 0) {
         countSec = 59;
         countMin--;
-    }   else {
+    } else {
         clearInterval(interval);
         $('.countdown').hide();
         $('.stop').hide();
         $('.restart').show();
+        $('.c-t').css('color','white');
         $('.message').html("<p>Time is over</p>")
     }
     updateText();
@@ -27,6 +28,7 @@ function countDown() {
         clearInterval(interval);
         $('.stop').hide();
         $('.num-controls').show();
+        $('.c-t').css('color','white');
         $('.start').show()
     });
 }
@@ -53,6 +55,7 @@ $('.start').click(() => {
     $('.start').hide();
     $('.num-controls').hide();
     $('.stop').show();
+    $('.c-t').css('color','#7ffaff');
     countDown()
 });
 
