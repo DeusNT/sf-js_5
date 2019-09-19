@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap);
+
+body {
+    text-align: center;
+    background-color: #001f3f;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 100;
+}
+
+p{
+    margin: 0;
+}
+
+.countdown-title {
+    color: #7FDBFF;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+
+.countdown {
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #0074D9;
+    display: inline-block;
+}
+
+.c-t {
+    padding: 15px;
+    border-radius: 25px;
+    border-width: 0px;
+    color: white;
+    background-color: #00b4ff;
+    display: inline-block;
+    width: 33px;
+    font-size: 30px;
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.message{
+    color: #7FDBFF;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+button{
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(65, 44, 132);
+    background-color: white;
+}
+
+.controls {
+    color: whitesmoke;
+    margin-top: 30px;
+    font-size: 25px;
+    background-color: cadetblue;
+}
+
+.start {
+    background-color: green;
+}
+
+.stop {
+    background-color: darkred;
+}

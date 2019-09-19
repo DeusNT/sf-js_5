@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1 class="countdown-title">Countdown timer</h1>
+    <section class="countdown">
+        <div class="countdown-number">
+            <input type="text" class="minutes c-t">
+            <p class="countdown-text">Minutes</p>
+        </div>
+        <div class="countdown-number">
+            <input type="text" class="seconds c-t">
+            <p class="countdown-text">Seconds</p>
+        </div>
+    </section>
+
+    <div>
+        <button class="minus num-controls">Minus</button>
+        <button class="plus num-controls">Plus</button>
+    </div>
+
+    <div class="message">
+
+    </div>
+
+    <div>
+        <button class="start controls">Start</button>
+        <button class="stop controls" style="display: none">Stop</button>
+        <button class="restart controls" style="display: none">Restart</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
