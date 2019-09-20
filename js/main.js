@@ -91,9 +91,13 @@ $(".c-t").on('input', function() {
     } else if (parseInt(numStr) > 59) {
         updateText();
         alert('Number must be smaller than 60')
-    } else if (!isNaN(parseInt($('.seconds').val())) || !isNaN(parseInt($('.minutes').val()))){
+    } else {
+        if (isNaN(parseInt($('.seconds').val())) || isNaN(parseInt($('.minutes').val()))) {
+            return
+        } else {
             countSec = parseInt($('.seconds').val());
             countMin = parseInt($('.minutes').val());
             setTimeout(updateText, 1000)
+        }
     }
 });
