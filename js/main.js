@@ -92,6 +92,9 @@ $(".c-t").on('input', function() {
         updateText();
         alert('Number must be smaller than 60')
     } else {
+        if (isNaN(parseInt($('.seconds').val())) || isNaN(parseInt($('.minutes').val()))) {
+            return
+        }
         countSec = parseInt($('.seconds').val());
         countMin = parseInt($('.minutes').val());
         setTimeout(updateText, 1000)
